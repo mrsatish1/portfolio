@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skills</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Satish Reddy</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="skills.html" class="active">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Skills</h2>
+
+    <div class="card">
+        <h3>Programming</h3>
+        <p>Python, SQL</p>
+    </div>
+
+    <div class="card">
+        <h3>Data Analysis & Visualization</h3>
+        <p>Pandas, NumPy, EDA, Data Cleaning, Matplotlib, Seaborn</p>
+    </div>
+
+    <div class="card">
+        <h3>Machine Learning</h3>
+        <p>Regression, Classification, Clustering, Model Evaluation</p>
+    </div>
+
+    <div class="card">
+        <h3>Deep Learning & Computer Vision</h3>
+        <p>CNN, TensorFlow, Keras, OpenCV, Tesseract OCR</p>
+    </div>
+
+    <div class="card">
+        <h3>Generative AI</h3>
+        <p>Prompt Engineering, LangChain, RAG, LLMs</p>
+    </div>
+
+    <div class="card">
+        <h3>Tools & Technologies</h3>
+        <p>Jupyter Notebook, VS Code, Git, Streamlit, FastAPI, Flask, SQL Server</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Satish Reddy</p>
+</footer>
+
+<!-- ✅ ADD SCRIPT HERE -->
+<script>
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+document.querySelectorAll(".card, .hero").forEach(el => {
+    observer.observe(el);
+});
+</script>
+
+</body>
+</html>

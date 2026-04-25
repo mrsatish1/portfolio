@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Satish Reddy</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Projects</h2>
+
+    <div class="projects-container">
+
+        <!-- PROJECT 1 -->
+        <div class="card project-card">
+            <h3>🚗 Parking Management System</h3>
+
+            <p class="project-desc">
+                Built a smart parking system that detects vehicle entry,
+                extracts number plates using OCR, and sends automated alerts
+                to users. Designed to improve parking efficiency and automation.
+            </p>
+
+            <p><strong>Tech Stack:</strong> Python, Streamlit, OpenCV, OCR</p>
+
+            <div class="project-buttons">
+                <a href="https://github.com/mrsatish1" target="_blank" class="button">GitHub</a>
+                <a href="#" class="button secondary">Live Demo</a>
+            </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="card project-card">
+            <h3>🪪 PAN Card Detection</h3>
+
+            <p class="project-desc">
+                Developed a YOLO-based deep learning model to detect PAN cards
+                and extract key information using computer vision techniques.
+            </p>
+
+            <p><strong>Tech Stack:</strong> Python, OpenCV, YOLO</p>
+
+            <div class="project-buttons">
+                <a href="https://github.com/mrsatish1" target="_blank" class="button">GitHub</a>
+                <a href="#" class="button secondary">Live Demo</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Satish Reddy</p>
+</footer>
+
+<!-- ✅ ADD SCRIPT HERE -->
+<script>
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+document.querySelectorAll(".card, .hero").forEach(el => {
+    observer.observe(el);
+});
+</script>
+
+</body>
+</html>

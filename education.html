@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Education</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Satish Reddy</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="skills.html">Skills</a>
+<a href="projects.html">Projects</a>
+<a href="resume.html">Resume</a>
+<a href="education.html" class="active">Education</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section>
+<h2>Education</h2>
+
+<div class="timeline">
+
+    <div class="timeline-item">
+        <h3>Present</h3>
+        <p><strong>Data Science & AI Training</strong></p>
+        <p>Naresh IT </p>
+    </div>
+
+    <div class="timeline-item">
+        <h3>2022</h3>
+        <p><strong>Bachelor's Degree (B.Com - General)</strong></p>
+        <p>Avinash College of Commerce</p>
+    </div>
+
+    <div class="timeline-item">
+        <h3>2019</h3>
+        <p><strong>Intermediate (MEC)</strong></p>
+        <p>Sri Medha Junior College</p>
+    </div>
+
+    <div class="timeline-item">
+        <h3>2017</h3>
+        <p><strong>10th Class (ICSE)</strong></p>
+        <p>St. Ann's High School</p>
+    </div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Satish Reddy</p>
+</footer>
+
+<!-- ✅ ADD SCRIPT HERE -->
+<script>
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+document.querySelectorAll(".card, .hero").forEach(el => {
+    observer.observe(el);
+});
+</script>
+
+</body>
+</html>

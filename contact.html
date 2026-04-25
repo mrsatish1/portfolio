@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Satish Reddy</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="skills.html">Skills</a>
+<a href="projects.html">Projects</a>
+<a href="resume.html">Resume</a>
+<a href="education.html">Education</a>
+<a href="contact.html" class="active">Contact</a>
+</nav>
+</header>
+
+<section id="contact">
+<h2>Contact</h2>
+
+<div class="card">
+<p>Email: <a href="mailto:satishreddy8661@gmail.com">satishreddy8661@gmail.com</a></p>
+<p>Phone: <a href="tel:+918019773649">+91-8019773649</a></p>
+<p>GitHub: <a href="https://github.com/mrsatish1" target="_blank">github.com/mrsatish1</a></p>
+<p>LinkedIn: <a href="https://linkedin.com/in/satish-reddy-619238206" target="_blank">linkedin.com/in/satish-reddy-619238206</a></p>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Satish Reddy</p>
+</footer>
+
+<!-- ✅ ADD SCRIPT HERE -->
+<script>
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+document.querySelectorAll(".card, .hero").forEach(el => {
+    observer.observe(el);
+});
+</script>
+
+</body>
+</html>

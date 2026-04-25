@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Satish Reddy | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Satish Reddy</h1>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+
+<!-- ✅ PREMIUM HERO -->
+<div class="hero">
+
+    <!-- LEFT -->
+    <div class="hero-text">
+        <h2>Hi, I'm Satish 👋</h2>
+
+        <p class="tagline">
+            Aspiring Data Scientist | AI & Computer Vision Enthusiast
+        </p>
+
+        <p class="hero-desc">
+            I build real-world AI applications using Machine Learning, Deep Learning,
+            and Computer Vision to solve practical problems.
+        </p>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="hero-image">
+        <img src="image.png" alt="Satish">
+    </div>
+
+</div>
+
+<!-- EXISTING CONTENT -->
+<h2>Welcome</h2>
+
+<div class="card">
+    <p>
+        I am an aspiring Data Scientist with a strong focus on Machine Learning, Computer Vision, and Generative AI. 
+        I specialize in building real-world applications that solve practical problems using intelligent systems. 
+        My work includes developing solutions like Parking Management Systems and PAN Card Detection using deep learning techniques.
+    </p>
+
+    <p>
+        I have hands-on experience with Python, data analysis, and model development, and I am continuously expanding my knowledge in AI and modern technologies. 
+        I am passionate about creating efficient, scalable solutions and aiming to contribute to impactful data-driven projects.
+    </p>
+
+    <p>
+        I am actively seeking opportunities where I can apply my skills, learn from real-world challenges, and grow as a Data Science professional.
+    </p>
+</div>
+
+</section>
+
+<footer>
+    <p>© 2026 Satish Reddy</p>
+</footer>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+document.querySelectorAll(".card, .hero").forEach(el => {
+    observer.observe(el);
+});
+</script>
+
+</body>
+</html>
